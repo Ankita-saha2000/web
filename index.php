@@ -6,6 +6,7 @@
 <body>
 	
 <?php include 'navbar.php';?>
+<?php include 'table_users.php';?>
 
 	<!--- Image Slider -->
 	<div class="carousel slide" data-ride="carousel">
