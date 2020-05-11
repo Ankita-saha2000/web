@@ -9,7 +9,7 @@ if($link === false){
         $username = mysqli_real_escape_string($link, $_REQUEST['username']);
         $password = mysqli_real_escape_string($link, $_REQUEST['password']);
         $email = mysqli_real_escape_string($link, $_REQUEST['email']);
-        $sql = "INSERT INTO logins (username, password ,email) VALUES ('$username','$password','$email')";
+        $sql = "INSERT INTO users (username, password ,email) VALUES ('$username','$password','$email')";
          
         if(mysqli_query($link, $sql)){
         } else{
@@ -100,7 +100,7 @@ body {
 <div class="row">
   <div class="column">
     <div class="card">
-      <h3>Are you a Empolyee</h3>
+      <h3>Are you an Employee</h3>
       <div class="image">
       <img src="empolyee.jpg">
       </div>
@@ -112,7 +112,7 @@ body {
 
   <div class="column">
     <div class="card">
-      <h3>Are you a Empolyer</h3>
+      <h3>Are you an Employer</h3>
       <div class="image">
       <img src="empolyer.jpg">
       </div>
